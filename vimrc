@@ -1,3 +1,6 @@
+set wildignore=assets/**,app/assets/images/**,log/**,tmp/**
+let g:CommandTMaxFiles=80085
+
 set nocompatible
 colorscheme desert 
 colorscheme darkspectrum
