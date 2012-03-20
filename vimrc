@@ -1,3 +1,6 @@
+set wildignore=assets/**,app/assets/images/**,log/**,tmp/**,public/assets/**
+let g:CommandTMaxFiles=80085
+
 set nocompatible
 colorscheme desert 
 colorscheme darkspectrum
@@ -9,6 +12,7 @@ set ignorecase
 set number
 set nobackup
 set noswapfile
+set clipboard=unnamed
 
 filetype off 
 call pathogen#helptags()
