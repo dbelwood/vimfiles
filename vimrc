@@ -1,7 +1,7 @@
 set wildignore=assets/**,app/assets/images/**,log/**,tmp/**,public/assets/**
 let g:CommandTMaxFiles=80085
 set foldmethod=indent
-set foldlevel=1
+set foldlevel=0
 
 set nocompatible
 colorscheme desert 
@@ -59,3 +59,14 @@ noremap <Leader>vs :RVspec <CR>
 noremap <Leader>rf :Rfind 
 
 noremap <Leader>term :ConqueTerm zsh <CR>
+
+" Strip trailing whitespace (,ss)
+function! StripWhiteSpace ()
+    let save_cursor = getpos(".")
+    let old_query = getreg('/')
+    :%s/\s\+$//e
+    call setpos('.', save_cursor)
+    call setreg('/', old_query)
+endfunction
+noremap <leader>ss :call StripWhiteSpace ()<CR>
+au BufWrite *.rb,*.coffee :call StripWhiteSpace()
