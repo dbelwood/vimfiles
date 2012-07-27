@@ -1,7 +1,7 @@
 set wildignore=assets/**,app/assets/images/**,log/**,tmp/**,public/assets/**
 let g:CommandTMaxFiles=80085
 set foldmethod=indent
-set foldlevel=0
+set foldlevel=1
 
 set nocompatible
 colorscheme desert 
