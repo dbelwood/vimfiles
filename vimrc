@@ -1,4 +1,4 @@
-set wildignore=assets/**,app/assets/images/**,log/**,tmp/**,public/assets/**
+set wildignore=assets/**,app/assets/images/**,log/**,tmp/**,public/assets/**,public/course-data/**,public/system/**,public/api/v1/system/**,data/**
 let g:CommandTMaxFiles=80085
 set foldmethod=indent
 set foldlevel=1
