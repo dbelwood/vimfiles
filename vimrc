@@ -1,5 +1,6 @@
 set wildignore=assets/**,app/assets/images/**,log/**,tmp/**,public/assets/**,public/course-data/**,public/system/**,public/api/v1/system/**,data/**
 let g:CommandTMaxFiles=80085
+let g:buffergator_suppress_keymaps=1
 set foldmethod=indent
 set foldlevel=1
 
@@ -57,6 +58,10 @@ noremap <Leader>vu :RVunittest <CR>
 noremap <Leader>vM :RVmigration <CR>
 noremap <Leader>vs :RVspec <CR>
 noremap <Leader>rf :Rfind 
+nnoremap <silent> <Leader>b :BuffergatorOpen<CR>
+nnoremap <silent> <Leader>B :BuffergatorClose<CR>
+nnoremap <silent> <Leader>tt :BuffergatorTabsOpen<CR>
+nnoremap <silent> <Leader>TT :BuffergatorTabsClose<CR>
 
 noremap <Leader>term :ConqueTerm zsh <CR>
 
