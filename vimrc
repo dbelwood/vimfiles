@@ -1,6 +1,7 @@
 set wildignore=assets/**,app/assets/images/**,log/**,tmp/**,public/assets/**,public/course-data/**,public/system/**,public/api/v1/system/**,data/**,.DS_Store
 let g:CommandTMaxFiles=80085
 let g:buffergator_suppress_keymaps=1
+let g:Powerline_symbols = 'fancy'
 set foldmethod=indent
 set foldlevel=1
 
@@ -43,6 +44,9 @@ noremap <leader>t :CommandT<CR>
 noremap <leader>sd :NERDTree<CR>
 noremap <leader>sf :Sex<CR>
 nmap <silent> ,/ :let @/=""<CR>
+map <C-n> :NERDTreeToggle<CR>
+autocmd vimenter * if !argc() | NERDTree | endif
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
 map <CA-Left> <C-w><Left>
 map <CA-Right> <C-w><Right>
@@ -75,3 +79,4 @@ function! StripWhiteSpace ()
 endfunction
 noremap <leader>ss :call StripWhiteSpace ()<CR>
 au BufWrite *.rb,*.coffee :call StripWhiteSpace()
+set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim

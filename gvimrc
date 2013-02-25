@@ -1,3 +1,3 @@
 set guioptions=eaA
-set guifont=Anonymous\ Pro:h16
+set guifont=Droid\ Sans\ Mono\ for\ Powerline:h11
 set nowrap
