@@ -85,3 +85,6 @@
 [submodule "bundle/syntastic"]
 	path = bundle/syntastic
 	url = git://github.com/scrooloose/syntastic.git
+[submodule "bundle/powerline-fonts"]
+	path = bundle/powerline-fonts
+	url = git://github.com/Lokaltog/powerline-fonts.git
